@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+    background: whitesmoke;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 16px;  
+}
+
+.form h1{
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-input{
+    padding : 10px;  
+}
+
+.form-input input, textarea, select{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;      
+    box-sizing: border-box; 
+}
+
+.form-input button{
+    width: 100%;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-input button:hover {
+    background: #abccf0;    
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+}
+
+.table thead tr{
+    background-color: rgb(255, 68, 0);
+    color: white;
+    text-align: left;
+}
+
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even){
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(255, 68, 0);
+}
+
+.table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+/* Estilos para el botón de eliminar con el id 'eliminar' */
+#eliminar {
+    background-color: rgb(255, 68, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#eliminar:hover {
+    background-color: darkblue; /* Cambia el color al pasar el cursor */
+}
+
+#eliminar:focus {
+    outline: none; /* Elimina el borde al hacer foco en el botón */
+}

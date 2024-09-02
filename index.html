@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form" id="taskForm">
+            <h1>Gestor de Tareas</h1>
+            <div class="form-input">
+                <input type="text" id="title" placeholder="Titulo">
+                <span id="titleError" class="error-message">Por favor, ingrese un título.</span>
+            </div>
+            <div class="form-input">
+                <textarea name="desc" rows="3" id="desc" placeholder="Escribe aquí..."></textarea>
+                <span id="descError" class="error-message">Por favor, ingrese una descripción.</span>
+            </div>
+            <div class="form-input">
+                <input type="date" id="fecLimite" min="date" placeholder="Fecha límite">
+                <span id="fecLimiteError" class="error-message">Por favor, seleccione una fecha válida.</span>
+            </div>
+            <div class="form-input">
+                <select id="prioridad">
+                    <option value="">Seleccione prioridad</option>
+                    <option value="1">Alta</option>
+                    <option value="2">Media</option>
+                    <option value="3">Baja</option>
+                </select>
+                <span id="prioridadError" class="error-message">Por favor, seleccione una prioridad.</span>
+            </div>
+            <div class="form-input">
+                <select id="estado">
+                    <option value="">Seleccione estado</option>
+                    <option value="1">Pendiente</option>
+                    <option value="2">En progreso</option>
+                    <option value="3">Completada</option>
+                </select>
+                <span id="estadoError" class="error-message">Por favor, seleccione un estado.</span>
+            </div>
+            <div class="form-input">
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Fecha de Inicio</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
